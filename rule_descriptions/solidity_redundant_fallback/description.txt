@@ -1,0 +1,1 @@
+description:contracts without a fallback function automatically revert payments

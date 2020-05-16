@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rules>
+    <Rule>
+        <RuleId>go_misuse_field_declaration</RuleId>
+        <Patterns>
+            <!-- Looks for construction: type .. struct { fieldDeclaration } . -->
+            <Pattern patternId="fie101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //structType/fieldDeclaration
+                    [ancestor::typeDeclaration/identifier[text()[1]=
+                    (ancestor::sourceUnit/contractDefinition/methodDefinition[identifier[text()[1] = "Invoke" or text()[1] = "Init"]]
+                    /receiver/parameters/parameterList/parameterDeclaration//pointerType//identifier/text())]
+                    ]
+                    [identifierList/identifier[text()[1]=
+                    (ancestor::sourceUnit/contractDefinition/methodDefinition/function/block/statementList/statement/simpleStatement/assignment//selectorType/typeExpression/typeName/identifier/text())]
+                    ]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_generation_random_number</RuleId>
+        <Patterns>
+            <!-- Looks for construction: rand.Intn(number/..) . -->
+            <Pattern patternId="ran101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //unaryExpression/primaryExpression
+                    [primaryExpression[selectorType/typeExpression/typeName/identifier[text()[1]="Seed" or text()[1]="Intn" ]]
+                    /primaryExpression/operand/operandName/identifier[text()[1] = "rand"]]
+                    [arguments/expressionList]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_read_after_write</RuleId>
+        <Patterns>
+            <!-- Looks for construction: like "ret, err := stub.GetState("key")". -->
+            <Pattern patternId="raw101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //shortVarDefinition
+                    [expressionList/expression/unaryExpression/primaryExpression/primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]= "GetState"]]
+                    [parent::*/parent::*/preceding-sibling::statement/simpleStatement[parent::*/preceding-sibling::statement/simpleStatement/shortVarDefinition[expressionList/expression/unaryExpression/primaryExpression/operand]
+                    [identifierList/identifier]]
+                    /shortVarDefinition/expressionList/expression/unaryExpression/primaryExpression[arguments/expressionList]
+                    /primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]= "PutState"]
+                    ]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_unchecked_input_arguments</RuleId>
+        <Patterns>
+            <!-- Looks for construction: "don't check input parameters ". -->
+            <Pattern patternId="uia101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //arguments
+                    [expressionList/expression/unaryExpression/primaryExpression/primaryExpression/operand/operandName/identifier[matches(text()[1],"^args$")]]
+                    [preceding-sibling::primaryExpression/selectorType/typeExpression/typeName/identifier[matches(text()[1], "GetState")]]
+                    [not(ancestor::statement/preceding-sibling::statement/ifStatement/expression[text()[1] = "!="]
+                    /expression[1]/unaryExpression/primaryExpression/arguments/expressionList//operand/operandName/identifier[text()[1] =
+                    (ancestor::statement/following-sibling::statement/simpleStatement//arguments/expressionList//operand/operandName/identifier/text())]
+                    )]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_unhandled_errors</RuleId>
+        <Patterns>
+            <!-- Looks for assignment statement, assigning to “_”. -->
+            <Pattern patternId="err101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>1</Severity>
+                <XPath>
+                    //shortVarDefinition/identifierList[count(identifier)=2]/identifier[text()[1]="_"]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+</Rules>

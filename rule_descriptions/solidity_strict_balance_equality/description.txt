@@ -1,0 +1,1 @@
+description:forcibly send ether to any address via selfdestruct() or by mining.

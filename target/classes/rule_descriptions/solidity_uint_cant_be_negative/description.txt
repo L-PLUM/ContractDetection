@@ -1,0 +1,1 @@
+description:comparing uint variable with zero (>=) is redundant, it may lead to an underflow issue.

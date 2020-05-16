@@ -1,0 +1,1 @@
+description:using continue in the do-while loop with solidity 0.4 and older,it ignores while condition.

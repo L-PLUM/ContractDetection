@@ -1,0 +1,1 @@
+description:unsafe type inference, explicitly specify the required type.

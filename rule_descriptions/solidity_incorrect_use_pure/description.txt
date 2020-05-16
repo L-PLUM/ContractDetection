@@ -1,0 +1,1 @@
+description:pure-functions should not read/change state

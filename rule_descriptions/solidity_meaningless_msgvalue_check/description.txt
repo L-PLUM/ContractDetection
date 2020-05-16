@@ -1,0 +1,1 @@
+description:"msg.value == 0" condition check is meaningless in most cases
