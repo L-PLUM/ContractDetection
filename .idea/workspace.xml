@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b8a33c4-769b-42b8-a766-19195aa1c7ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule_descriptions/go_generation_random_number/description.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule_descriptions/go_generation_random_number/name.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule_descriptions/go_generation_random_number/severity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule_descriptions/go_read_after_write/severity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rule_descriptions/go_read_after_write/severity.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/go-rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/go-rules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/rules/go_generation_random_number.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/rules/go_misuse_field_declaration.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/rules/go_misuse_field_declaration.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ContractDetection-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ContractDetection-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ContractDetection-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ContractDetection-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkstyle-cachefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/go-rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/go-rules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rule_descriptions/go_generation_random_number/description.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rule_descriptions/go_generation_random_number/name.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rule_descriptions/go_generation_random_number/severity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pmd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/pmd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.cqupt.lplum.ContractDetection.RulesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.cqupt.lplum.ContractDetection.RulesTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.cqupt.lplum.ContractDetection.RulesTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.cqupt.lplum.ContractDetection.RulesTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/rules/go_generation_random_number.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/rules/go_misuse_field_declaration.go" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/rules/go_misuse_field_declaration.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +13,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="171">
+                <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,7 +73,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/rules/go_unchecked_input_arguments.go" />
         <option value="$PROJECT_DIR$/rule_descriptions/solidity_unrestricted_write_operation/description.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/solidity-rules.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/rule_descriptions/go_global_variable_usage/severity.txt" />
         <option value="$PROJECT_DIR$/rule_descriptions/go_timestamp_dependency/severity.txt" />
         <option value="$PROJECT_DIR$/rule_descriptions/go_map_structure_iteration/severity.txt" />
@@ -93,6 +84,7 @@
         <option value="$PROJECT_DIR$/rule_descriptions/go_cross_channel_chaincode_invocation/severity.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/go-rules.xml" />
         <option value="$PROJECT_DIR$/rule_descriptions/go_read_after_write/severity.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -341,15 +333,16 @@
       <workItem from="1588906420825" duration="8041000" />
       <workItem from="1589763919422" duration="212000" />
       <workItem from="1589764142787" duration="480000" />
-      <workItem from="1592458462674" duration="5599000" />
+      <workItem from="1592458462674" duration="5618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236092000" />
+    <option name="totallyTimeSpent" value="236111000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -774,16 +767,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/rules/go_call_external_library.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="589">
-            <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rule_descriptions/go_concurrency_risk/description.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -905,6 +888,16 @@
             <element signature="n#Rule#13;n#Rules#0;n#!!top" />
             <element signature="n#Rule#11;n#Rules#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="171">
+            <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

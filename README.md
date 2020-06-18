@@ -1,7 +1,7 @@
 # 工具使用说明
 
 ## 生成可视化抽象语法树和XML中间表示
-###将智能合约生成抽象语法树
+### 将智能合约生成抽象语法树
 
 ```bash
 $ mvn exec:java@tree -Dexec.args="-p <path to the file>"
