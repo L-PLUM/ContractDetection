@@ -1,0 +1,1 @@
+description: no data will be committed in the other channel,only obtain what the chaincode function returns.

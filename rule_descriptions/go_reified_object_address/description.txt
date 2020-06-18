@@ -1,0 +1,1 @@
+description:A pointer is an address of memory, and the address depends on the environment.

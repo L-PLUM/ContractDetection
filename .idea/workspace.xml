@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b8a33c4-769b-42b8-a766-19195aa1c7ef" name="Default" comment="" />
+    <list default="true" id="0b8a33c4-769b-42b8-a766-19195aa1c7ef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule_descriptions/go_generation_random_number/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule_descriptions/go_generation_random_number/name.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule_descriptions/go_generation_random_number/severity.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule_descriptions/go_read_after_write/severity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rule_descriptions/go_read_after_write/severity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/go-rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/go-rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/rules/go_generation_random_number.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/rules/go_misuse_field_declaration.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/rules/go_misuse_field_declaration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ContractDetection-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ContractDetection-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ContractDetection-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ContractDetection-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkstyle-cachefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/go-rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/go-rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rule_descriptions/go_generation_random_number/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rule_descriptions/go_generation_random_number/name.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rule_descriptions/go_generation_random_number/severity.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/pmd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/pmd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.cqupt.lplum.ContractDetection.RulesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.cqupt.lplum.ContractDetection.RulesTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.cqupt.lplum.ContractDetection.RulesTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.cqupt.lplum.ContractDetection.RulesTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/rules/go_generation_random_number.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/rules/go_misuse_field_declaration.go" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/rules/go_misuse_field_declaration.go" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,19 +36,12 @@
   <component name="FileEditorManager">
     <leaf />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_continue/name.txt" />
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_if_revert/description.txt" />
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_if_revert/name.txt" />
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_inline_assembly/name.txt" />
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_inline_assembly/description.txt" />
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_private_modifier/description.txt" />
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_private_modifier/name.txt" />
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_send/description.txt" />
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_send/name.txt" />
-        <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_tx_origin/name.txt" />
         <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_tx_origin/description.txt" />
         <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_var/description.txt" />
         <option value="$PROJECT_DIR$/rule_descriptions/solidity_use_var/name.txt" />
@@ -41,7 +57,6 @@
         <option value="$PROJECT_DIR$/rule_descriptions/solidity_gas_costly_in_loops/description.txt" />
         <option value="$PROJECT_DIR$/src/test/resources/rules/solidity_gas_costly_in_loops.sol" />
         <option value="$PROJECT_DIR$/src/test/resources/rules/solidity_denial_of_service.sol" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/resources/rules/solidity_overpowered_operation.sol" />
         <option value="$PROJECT_DIR$/src/test/resources/rules/solidity_re-entrancy.sol" />
         <option value="$PROJECT_DIR$/src/test/resources/rules/solidity_unrestricted_write_operation.sol" />
@@ -63,10 +78,21 @@
         <option value="$PROJECT_DIR$/src/test/resources/rules/solidity_upgrade_to_new_version.sol" />
         <option value="$PROJECT_DIR$/src/test/resources/rules/solidity_implicit_visibility.sol" />
         <option value="$PROJECT_DIR$/src/test/resources/rules/go_misuse_field_declaration.go" />
-        <option value="$PROJECT_DIR$/src/main/resources/go-rules.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/rules/go_unchecked_input_arguments.go" />
         <option value="$PROJECT_DIR$/rule_descriptions/solidity_unrestricted_write_operation/description.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/solidity-rules.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/rule_descriptions/go_global_variable_usage/severity.txt" />
+        <option value="$PROJECT_DIR$/rule_descriptions/go_timestamp_dependency/severity.txt" />
+        <option value="$PROJECT_DIR$/rule_descriptions/go_map_structure_iteration/severity.txt" />
+        <option value="$PROJECT_DIR$/rule_descriptions/go_concurrency_risk/severity.txt" />
+        <option value="$PROJECT_DIR$/rule_descriptions/go_call_external_library/severity.txt" />
+        <option value="$PROJECT_DIR$/src/test/resources/rules/go_execute_external_command.go" />
+        <option value="$PROJECT_DIR$/rule_descriptions/go_external_file_access/severity.txt" />
+        <option value="$PROJECT_DIR$/rule_descriptions/go_range_query_risk/severity.txt" />
+        <option value="$PROJECT_DIR$/rule_descriptions/go_cross_channel_chaincode_invocation/severity.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/go-rules.xml" />
+        <option value="$PROJECT_DIR$/rule_descriptions/go_read_after_write/severity.txt" />
       </list>
     </option>
   </component>
@@ -76,8 +102,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="27" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="25" />
     <option name="y" value="45" />
     <option name="width" value="1355" />
     <option name="height" value="865" />
@@ -88,6 +114,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,7 +144,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -313,14 +339,17 @@
       <workItem from="1588150870540" duration="801000" />
       <workItem from="1588852369972" duration="4753000" />
       <workItem from="1588906420825" duration="8041000" />
+      <workItem from="1589763919422" duration="212000" />
+      <workItem from="1589764142787" duration="480000" />
+      <workItem from="1592458462674" duration="5599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229801000" />
+    <option name="totallyTimeSpent" value="236092000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="22" y="36" width="1084" height="692" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -331,12 +360,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.4054581" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27882037" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="ANTLR Preview" order="7" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -393,101 +422,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_transfer_in_loop.sol" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_gaslimit_in_loops.sol" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_array_length_manipulation.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule_descriptions/solidity_keeping_secrets/name.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule_descriptions/solidity_denial_of_service/severity.txt" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_call_to_the_unknown.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule_descriptions/solidity_denial_of_service/name.txt" />
-    <entry file="file://$PROJECT_DIR$/rule_descriptions/solidity_denial_of_service/description.txt" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_denial_of_service.sol" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_locked_ether.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_incorrect_signature.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1064" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule_descriptions/solidity_reentrancy/name.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_reentrancy.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_keeping_secrets.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule_descriptions/solidity_keeping_secrets/description.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" lean-forward="true" selection-start-column="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule_descriptions/solidity_unchecked_call_return_value/description.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="67" selection-start-column="67" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule_descriptions/solidity_unchecked_call_return_value/name.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_unchecked_call_return_value.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-290">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rule_descriptions/solidity_div_before_mul/name.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/rules/solidity_misuse_blockhash.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -559,20 +493,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/go_misuse_field_declaration.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/go_generation_random_number.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/go_generation_random_number.go" />
     <entry file="file://$PROJECT_DIR$/src/main/antlr4/com/cqupt/lplum/ContractDetection/Go.g4">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-57" />
@@ -637,32 +558,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/go-rules.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/go_misuse_field_declaration.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="n#Rule#0;n#Rules#0;n#!!top" />
-            <element signature="n#Rule#1;n#Rules#0;n#!!top" />
-            <element signature="n#Rule#2;n#Rules#0;n#!!top" />
-            <element signature="n#Rule#4;n#Rules#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="378">
-            <caret line="39" lean-forward="true" selection-start-line="38" selection-end-line="39" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="133">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/solidity-rules.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="532">
           <caret line="4840" column="11" lean-forward="true" selection-start-line="4840" selection-start-column="11" selection-end-line="4840" selection-end-column="11" />
           <folding>
             <element signature="n#Rule#0;n#Rules#0;n#!!top" />
@@ -853,6 +758,152 @@
             <element signature="n#Pattern#1;n#Patterns#0;n#Rule#36;n#Rules#0;n#!!top" />
             <element signature="n#Rule#37;n#Rules#0;n#!!top" />
             <element signature="n#Pattern#0;n#Patterns#0;n#Rule#37;n#Rules#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_unhandled_errors/description.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_unhandled_errors/name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_map_structure_iteration/description.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/go_call_external_library.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="589">
+            <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_concurrency_risk/description.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_random_number_generation/severity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_random_number_generation/name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_global_variable_usage/name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_global_variable_usage/severity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_timestamp_dependency/severity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_timestamp_dependency/name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_map_structure_iteration/name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_map_structure_iteration/severity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_concurrency_risk/severity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/rules/go_execute_external_command.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_call_external_library/name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_call_external_library/description.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_call_external_library/severity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_external_file_access/severity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_range_query_risk/severity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_misuse_field_declaration/severity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_cross_channel_chaincode_invocation/severity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_read_after_write/severity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_unchecked_input_arguments/severity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rule_descriptions/go_unhandled_errors/severity.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/go-rules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="281" column="19" lean-forward="true" selection-start-line="281" selection-start-column="19" selection-end-line="281" selection-end-column="19" />
+          <folding>
+            <element signature="n#Rule#0;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#0;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#1;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#2;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#3;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#5;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#6;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#11;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#12;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#9;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#13;n#Rules#0;n#!!top" />
+            <element signature="n#Rule#11;n#Rules#0;n#!!top" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,206 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Rules>
     <Rule>
+        <RuleId>go_random_number_generation</RuleId>
+        <Patterns>
+            <!-- Looks for construction: rand.Intn(number/..) . -->
+            <Pattern patternId="ran101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //unaryExpression/primaryExpression
+                    [primaryExpression[selectorType/typeExpression/typeName/identifier[text()[1]="Seed" or text()[1]="Intn" ]]
+                    /primaryExpression/operand/operandName/identifier[text()[1] = "rand"]]
+                    [arguments/expressionList]
+                </XPath>
+            </Pattern>
+            <!-- Looks for package: crypto/rand -->
+            <Pattern patternId="ran102">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //importDefinition/importDeclaration/importPath[text()[1] = "crypto/rand"]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_global_variable_usage</RuleId>
+        <Patterns>
+            <!-- Looks for  global variable. -->
+            <Pattern patternId="var101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //contractDefinition/declaration/varDefinition/varDeclaration
+                    [identifierList/identifier[text()[1]=
+                    (ancestor::sourceUnit/contractDefinition/methodDefinition/function/block/statementList/statement/simpleStatement//expressionList[1]/expression/unaryExpression/primaryExpression/operand/operandName/identifier/text())]
+                    ]
+                    [identifierList/identifier[text()[1]=
+                    (ancestor::sourceUnit/contractDefinition/methodDefinition/function/block/statementList/statement/simpleStatement//expressionList[2]/expression/unaryExpression/primaryExpression
+                    [primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]= "PutState"]]
+                    /arguments//operand/operandName/identifier/text())
+                    ]]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_timestamp_dependency</RuleId>
+        <Patterns>
+            <!-- Looks for  timestamp function. -->
+            <Pattern patternId="tim101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //statement/simpleStatement/(shortVarDefinition | assignment)
+                    [expressionList/expression/unaryExpression/primaryExpression[arguments]
+                    /primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]="Now"]]
+                </XPath>
+            </Pattern>
+            <!-- Looks for  timestamp function. -->
+            <Pattern patternId="tim102">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //statement/simpleStatement/(shortVarDefinition | assignment)
+                    [expressionList/expression/unaryExpression/primaryExpression[arguments]
+                    /primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]="GetTxTimestamp"]]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_map_structure_iteration</RuleId>
+        <Patterns>
+            <!-- Looks for  map structure ,range-->
+            <Pattern patternId="map101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //forStatement[ancestor::statementList/statement
+                    //mapType[ancestor::shortVarDefinition/identifierList/identifier[text()[1]=
+                    (ancestor::statementList/statement/forStatement/rangeClause/expression//identifier/text())]]
+                    ]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_concurrency_risk</RuleId>
+        <Patterns>
+            <!-- Looks for channel or goroutine. -->
+            <Pattern patternId="con101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //channelType[ancestor::statementList/statement/goStatement]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_execute_external_command</RuleId>
+        <Patterns>
+            <!-- Looks for  package: os/exec. -->
+            <Pattern patternId="com101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>3</Severity>
+                <XPath>
+                    //importDefinition/importDeclaration/importPath[text()[1] = "os/exec"]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_call_external_library</RuleId>
+        <Patterns>
+            <!-- Looks for  call external library-->
+            <Pattern patternId="lib101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>3</Severity>
+                <XPath>
+                    //importDefinition/importDeclaration/identifier[not(text()="pb")]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_external_file_access</RuleId>
+        <Patterns>
+            <!-- Looks for external file, like os.Open()) . -->
+            <Pattern patternId="fil101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>3</Severity>
+                <XPath>
+                    //primaryExpression[primaryExpression/operand/operandName/identifier[text()[1]="os"]]
+                    /selectorType/typeExpression/typeName/identifier[text()[1]="open"]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
+        <RuleId>go_range_query_risk</RuleId>
+        <Patterns>
+            <!-- Looks for range query methods,like GetQueryResult(). -->
+            <Pattern patternId="que101">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //statement/simpleStatement/(shortVarDefinition | assignment)
+                    [expressionList/expression/unaryExpression/primaryExpression[arguments]
+                    /primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]="GetQueryResult"]]
+                </XPath>
+            </Pattern>
+            <!-- Looks for range query methods,like GetHistoryForKey(). -->
+            <Pattern patternId="que102">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //statement/simpleStatement/(shortVarDefinition | assignment)
+                    [expressionList/expression/unaryExpression/primaryExpression[arguments]
+                    /primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]="GetHistoryForKey"]]
+                </XPath>
+            </Pattern>
+            <!-- Looks for range query methods,like GetPrivateDataQueryResult(). -->
+            <Pattern patternId="que103">
+                <Categories>
+                    <Category>Go</Category>
+                </Categories>
+                <Severity>2</Severity>
+                <XPath>
+                    //statement/simpleStatement/(shortVarDefinition | assignment)
+                    [expressionList/expression/unaryExpression/primaryExpression[arguments]
+                    /primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]="GetPrivateDataQueryResult"]]
+                </XPath>
+            </Pattern>
+        </Patterns>
+    </Rule>
+    <Rule>
         <RuleId>go_misuse_field_declaration</RuleId>
         <Patterns>
             <!-- Looks for construction: type .. struct { fieldDeclaration } . -->
@@ -23,19 +223,17 @@
         </Patterns>
     </Rule>
     <Rule>
-        <RuleId>go_generation_random_number</RuleId>
+        <RuleId>go_cross_channel_chaincode_invocation</RuleId>
         <Patterns>
-            <!-- Looks for construction: rand.Intn(number/..) . -->
-            <Pattern patternId="ran101">
+            <!-- Looks for InvokeChaincode() method to invoke another chaincode. -->
+            <Pattern patternId="ach101">
                 <Categories>
                     <Category>Go</Category>
                 </Categories>
-                <Severity>2</Severity>
+                <Severity>3</Severity>
                 <XPath>
-                    //unaryExpression/primaryExpression
-                    [primaryExpression[selectorType/typeExpression/typeName/identifier[text()[1]="Seed" or text()[1]="Intn" ]]
-                    /primaryExpression/operand/operandName/identifier[text()[1] = "rand"]]
-                    [arguments/expressionList]
+                    //primaryExpression[arguments]
+                    /primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]="InvokeChaincode"]
                 </XPath>
             </Pattern>
         </Patterns>
@@ -48,11 +246,12 @@
                 <Categories>
                     <Category>Go</Category>
                 </Categories>
-                <Severity>2</Severity>
+                <Severity>1</Severity>
                 <XPath>
                     //shortVarDefinition
                     [expressionList/expression/unaryExpression/primaryExpression/primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]= "GetState"]]
-                    [parent::*/parent::*/preceding-sibling::statement/simpleStatement[parent::*/preceding-sibling::statement/simpleStatement/shortVarDefinition[expressionList/expression/unaryExpression/primaryExpression/operand]
+                    [parent::*/parent::*/preceding-sibling::statement/simpleStatement[parent::*/preceding-sibling::statement/simpleStatement/shortVarDefinition
+                    [expressionList/expression/unaryExpression/primaryExpression/operand]
                     [identifierList/identifier]]
                     /shortVarDefinition/expressionList/expression/unaryExpression/primaryExpression[arguments/expressionList]
                     /primaryExpression/selectorType/typeExpression/typeName/identifier[text()[1]= "PutState"]
@@ -98,3 +297,4 @@
         </Patterns>
     </Rule>
 </Rules>
+

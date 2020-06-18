@@ -5,13 +5,15 @@ import (
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	"math/rand"
 	"strconv"
+	// <yes> <report> go_random_number_generation ran102
+	"crypto/rand"
 )
 
 type RandomChaincode struct {
 }
 
 func (c *RandomChaincode) Init(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
-	// <yes> <report> go_generation_random_number ran101
+	// <yes> <report> go_random_number_generation ran101
 	return nil, stub.PutState("random", []byte(strconv.Itoa(rand.Intn(100))))
 }
 
